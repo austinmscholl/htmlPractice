@@ -16,8 +16,15 @@ class ShiftCreate extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "",
-      instructions: ""
+      hospitalId: null,
+      hospitalName: "",
+      department: "",
+      startDate: "",
+      endDate: "",
+      startTime: "",
+      endTime: "",
+      pay: "",
+      pickedUp: false
     };
   }
 
@@ -40,7 +47,17 @@ class ShiftCreate extends Component {
         shiftData.error
           ? (alert.innerText = "An error has occurred")
           : this.props.updateShiftsArray();
-        this.setState({ title: "", instructions: "" }); // No need to clear the problem set value
+        this.setState({ 
+          hospitalId: null, 
+          hospitalName: "",
+          department: "",
+          startDate: "",
+          endDate: "",
+          startTime: "",
+          endTime: "",
+          pay: "",
+          pickedUp: false
+        }); // No need to clear the problem set value
       });
   };
 
@@ -54,26 +71,101 @@ class ShiftCreate extends Component {
             <hr />
             <Form onSubmit={this.handleSubmit}>
               <FormGroup>
-                <Label for="title">Title</Label>
+                <Label for="hospitalId">Hospital Id</Label>
                 <Input
-                  id="title"
+                  id="hospitalId"
                   type="text"
-                  name="title"
+                  name="hospitalId"
                   maxLength="255"
-                  value={this.state.title}
-                  placeholder="enter title"
+                  value={this.state.hospitalId}
+                  placeholder="enter hospital id"
                   onChange={this.handleChange}
                   required
                 />
               </FormGroup>
               <FormGroup>
-                <Label for="instructions">Instructions</Label>
+                <Label for="hospitalName">Hospital Name</Label>
                 <Input
-                  id="instructions"
-                  type="textarea"
-                  name="instructions"
-                  value={this.state.instructions}
-                  placeholder="enter instructions"
+                  id="hospitalName"
+                  type="text"
+                  name="hospitalName"
+                  maxLength="255"
+                  value={this.state.hospitalName}
+                  placeholder="enter hospital name"
+                  onChange={this.handleChange}
+                  required
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="department">Department</Label>
+                <Input
+                  id="department"
+                  type="text"
+                  name="department"
+                  maxLength="255"
+                  value={this.state.department}
+                  placeholder="enter department"
+                  onChange={this.handleChange}
+                  required
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="startDate">Start Date</Label>
+                <Input
+                  id="startDate"
+                  type="date"
+                  name="startDate"
+                  value={this.state.startDate}
+                  placeholder="enter start date"
+                  onChange={this.handleChange}
+                  required
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="endDate">End Date</Label>
+                <Input
+                  id="endDate"
+                  type="date"
+                  name="endDate"
+                  value={this.state.endDate}
+                  placeholder="enter end date"
+                  onChange={this.handleChange}
+                  required
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="startTime">Start Time</Label>
+                <Input
+                  id="startTime"
+                  type="time"
+                  name="startTime"
+                  value={this.state.startTime}
+                  placeholder="enter start time"
+                  onChange={this.handleChange}
+                  required
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="endTime">End time</Label>
+                <Input
+                  id="endtime"
+                  type="time"
+                  name="endtime"
+                  value={this.state.endtime}
+                  placeholder="enter end time"
+                  onChange={this.handleChange}
+                  required
+                />
+              </FormGroup>
+              <FormGroup>
+                <Label for="pay">Pay</Label>
+                <Input
+                  id="pay"
+                  type="text"
+                  name="pay"
+                  maxLength="255"
+                  value={this.state.pay}
+                  placeholder="enter pay"
                   onChange={this.handleChange}
                   required
                 />

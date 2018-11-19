@@ -98,7 +98,7 @@ class NurseIndex extends Component {
       method: "POST",
       body: JSON.stringify({
         submission: {
-          hospitalId: this.state.hospitald,
+          hospitalId: this.state.hospitalId,
           shiftId: shiftId,
           content: "",
           grade: ""

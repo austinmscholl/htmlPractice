@@ -73,7 +73,7 @@ class Header extends Component {
         this.props.auth.sessionPermission === "admin":
         return <Route exact path="/" component={UserIndex} />;
       case this.props.auth.sessionToken === localStorage.getItem("token") &&
-        this.props.auth.sessionPermission === "shifts":  //assignments
+        this.props.auth.sessionPermission === "hospital":  //assignments
         return <Route exact path="/" component={ShiftIndex} />;
       case this.props.auth.sessionToken === localStorage.getItem("token") &&
         this.props.auth.sessionPermission === "nurse": //student
