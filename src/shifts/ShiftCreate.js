@@ -16,10 +16,10 @@ class ShiftCreate extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      hospitalId: null,
+      hospitalId: "",
       hospitalName: "",
       department: "",
-      startDate: "",
+      startDate: new Date(),
       endDate: "",
       startTime: "",
       endTime: "",
@@ -42,16 +42,16 @@ class ShiftCreate extends Component {
         Authorization: this.props.auth.sessionToken
       })
     })
-      .then(res => res.json())
+      // .then(res => res.json())
       .then(shiftData => {
         shiftData.error
           ? (alert.innerText = "An error has occurred")
           : this.props.updateShiftsArray();
         this.setState({ 
-          hospitalId: null, 
+          hospitalId: "", 
           hospitalName: "",
           department: "",
-          startDate: "",
+          startDate: new Date(),
           endDate: "",
           startTime: "",
           endTime: "",
@@ -74,9 +74,8 @@ class ShiftCreate extends Component {
                 <Label for="hospitalId">Hospital Id</Label>
                 <Input
                   id="hospitalId"
-                  type="text"
+                  type="number"
                   name="hospitalId"
-                  maxLength="255"
                   value={this.state.hospitalId}
                   placeholder="enter hospital id"
                   onChange={this.handleChange}
@@ -116,7 +115,6 @@ class ShiftCreate extends Component {
                   type="date"
                   name="startDate"
                   value={this.state.startDate}
-                  placeholder="enter start date"
                   onChange={this.handleChange}
                   required
                 />
@@ -128,7 +126,6 @@ class ShiftCreate extends Component {
                   type="date"
                   name="endDate"
                   value={this.state.endDate}
-                  placeholder="enter end date"
                   onChange={this.handleChange}
                   required
                 />
@@ -140,7 +137,6 @@ class ShiftCreate extends Component {
                   type="time"
                   name="startTime"
                   value={this.state.startTime}
-                  placeholder="enter start time"
                   onChange={this.handleChange}
                   required
                 />
@@ -152,7 +148,6 @@ class ShiftCreate extends Component {
                   type="time"
                   name="endtime"
                   value={this.state.endtime}
-                  placeholder="enter end time"
                   onChange={this.handleChange}
                   required
                 />

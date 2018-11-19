@@ -10,11 +10,9 @@ import {
   Container
 } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import AssignmentIndex from "../assignments/AssignmentIndex";
 import ShiftIndex from '../shifts/ShiftIndex';
 import Auth from "../auth/Auth";
 import UserIndex from "../admin/UserIndex";
-// import StudentIndex from "../student/StudentIndex";
 import NurseIndex from '../nurse/NurseIndex';
 import { AuthContext } from "../auth/AuthContext";
 import "../App.css";
@@ -73,10 +71,10 @@ class Header extends Component {
         this.props.auth.sessionPermission === "admin":
         return <Route exact path="/" component={UserIndex} />;
       case this.props.auth.sessionToken === localStorage.getItem("token") &&
-        this.props.auth.sessionPermission === "hospital":  //assignments
+        this.props.auth.sessionPermission === "hospital":
         return <Route exact path="/" component={ShiftIndex} />;
       case this.props.auth.sessionToken === localStorage.getItem("token") &&
-        this.props.auth.sessionPermission === "nurse": //student
+        this.props.auth.sessionPermission === "nurse":
         return <Route exact path="/" component={NurseIndex} />;
       default:
         return <Route exact path="/" component={Auth} />;

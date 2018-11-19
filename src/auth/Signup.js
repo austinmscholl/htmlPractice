@@ -21,7 +21,7 @@ class Signup extends Component {
       email: "",
       password: "",
       confirmPassword: "",
-      permission: "hospital"
+      permission: "admin"
     };
   }
 
