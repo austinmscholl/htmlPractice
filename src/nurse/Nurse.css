@@ -1,0 +1,33 @@
+.shiftWindow {
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.shiftWindow .form-control {
+  margin-bottom: 0.5rem;
+}
+
+.submissionWindow {
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.content {
+  max-width: 100vh;
+}
+
+#content {
+  min-height: 18vh;
+  font-family: "Times New Roman", Times, serif;
+}
+
+textarea {
+  margin: 1rem 0;
+}
+
+#ungraded {
+  background-color: transparent;
+  border-color: transparent;
+  padding-left: 0px;
+  color: #333a56;
+}

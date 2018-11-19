@@ -1,0 +1,64 @@
+#grading {
+  max-width: 95vh;
+}
+
+#grading .modal-content {
+  padding: 1rem;
+  background-color: #333a56;
+  color: #f7f5e6;
+}
+
+#contentToGrade {
+  width: 100%;
+  min-height: 50vh;
+}
+
+#grading .btn {
+  width: 5rem;
+  float: right !important;
+}
+
+#grading #close {
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  padding: 0;
+  margin: -0.8rem -0.4em 0 0;
+  background-color: transparent;
+  border-color: transparent;
+  color: #f7f5e6;
+}
+
+#grading h4 {
+  line-height: 1.5;
+}
+
+#grading hr {
+  border-color: #f7f5e6;
+}
+
+#selectStudent {
+  padding: 5px 0;
+}
+
+#contentToGrade {
+  padding: 5px;
+  background-color: #f7f5e6;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2em;
+}
+
+.update {
+  text-align: center;
+}
+
+#submit {
+  width: 50% !important;
+  border-radius: 0 0.25rem 0.25rem 0;
+  font-weight: bold;
+}
+
+#grade {
+  width: 50%;
+  border-radius: 0.25rem 0 0 0.25rem;
+}

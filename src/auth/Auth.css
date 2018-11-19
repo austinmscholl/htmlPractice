@@ -1,0 +1,12 @@
+b {
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+#newHospital {
+  background-color: #e8e8e8;
+  color: #333a56;
+}

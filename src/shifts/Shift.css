@@ -1,0 +1,61 @@
+/* CREATE/EDIT */
+
+.content {
+  white-space: pre-wrap;
+}
+
+#instructions {
+  margin-top: 0;
+}
+
+.wrapper {
+  margin: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/* SHIFTS TABLE */
+
+#shifts th {
+  padding: 0.5rem 0.2rem;
+  text-align: center;
+}
+
+#shifts td {
+  align-content: center;
+  padding: 0.5rem 0;
+}
+
+#shifts .buttons {
+  padding: 0;
+  margin-right: 0.2rem;
+}
+
+#shifts .btn {
+  min-width: 3.5rem;
+  width: 100%;
+  margin: 0.1rem 0;
+  padding: 0 0;
+  min-height: 1.5rem;
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.react-confirm-alert-body {
+  text-align: center;
+  margin: auto;
+}
+
+.react-confirm-alert-body button {
+  text-align: center;
+  margin: auto;
+  font-size: 1.5em;
+}

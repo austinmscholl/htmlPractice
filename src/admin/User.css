@@ -1,0 +1,15 @@
+#admin td {
+  align-content: center;
+}
+
+#admin th {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+#admin td {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+#admin .btn {
+  margin: 0px;
+}

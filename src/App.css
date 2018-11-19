@@ -1,0 +1,164 @@
+/*Global*/
+
+body {
+  background-color: #e8e8e8;
+  color: #333a56;
+}
+
+.body {
+  padding: 0;
+}
+
+.container {
+  max-width: 1800px;
+}
+
+.container .btn {
+  background-color: #333a56;
+  color: #f7f5e6;
+  margin-bottom: 0.3rem;
+}
+
+hr {
+  border-color: #333a56;
+  width: 100%;
+  opacity: 0.4;
+}
+
+h1 {
+  text-align: center;
+}
+
+#alert {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+/* Header */
+
+.navwrapper {
+  background-color: #333a56;
+  width: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #333a56 !important;
+  color: #f7f5e6;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  padding: 0 0 0.3rem 0;
+}
+
+.badge {
+  background-color: #f7f5e6;
+  color: #52658f;
+}
+
+.navbar .btn {
+  background-color: #f7f5e6;
+  color: #52658f;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.nav-item {
+  padding: 0;
+}
+
+/*Footer*/
+
+footer {
+  padding: 0 !important;
+  width: 100%;
+}
+
+#phantomFooter {
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 25px;
+  background-color: #333a56;
+  color: #f7f5e6;
+}
+
+.textWidth {
+  max-width: 400px;
+  margin: auto;
+}
+
+footer a,
+footer a:visited,
+footer a:hover {
+  color: #333a56;
+  text-decoration: none;
+}
+
+footer span {
+  cursor: pointer;
+}
+
+footer,
+li {
+  padding: 0 1rem;
+  margin: auto;
+}
+
+#contact .modal-md {
+  max-width: 50vh;
+}
+
+#contact .modal-content {
+  padding: 0 2rem 2rem 2rem;
+  background-color: #333a56;
+  color: #f7f5e6;
+  text-align: left;
+}
+
+#contact .form-control {
+  margin-bottom: 20px;
+  background-color: #e8e8e8;
+}
+
+#contact .modal-title {
+  font-size: 1.5em;
+}
+
+#contact .modal hr {
+  border-color: #e8e8e8;
+}
+
+#contact .modal p {
+  text-align: left;
+}
+
+#contact .btn {
+  background-color: #f7f5e6;
+  color: #333a56;
+  font-weight: bold;
+  width: 5rem;
+}
+
+#message {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+#contact #closeSupport {
+  margin-left: auto;
+  margin-right: -2.5rem;
+  background-color: transparent;
+  border-color: transparent;
+  color: #f7f5e6;
+  font-size: 2em;
+}
