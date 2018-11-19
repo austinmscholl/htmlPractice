@@ -105,7 +105,7 @@ class ShiftIndex extends Component {
           {this.state.showEditMenu ? ( //Edit menu will only appear if true
             <ShiftEdit
               edit={this.editShift}
-              assignment={this.state.shiftToUpdate}
+              shift={this.state.shiftToUpdate}
               cancel={this.cancelEdit}
             />
           ) : (

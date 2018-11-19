@@ -19,7 +19,7 @@ export default class Footer extends Component {
         <div id="phantomFooter" />
         <div className="footer">
           <Nav className="textWidth">
-            <li>{"\u00A9"} Austin Scholl 2018.</li>
+            <li>{"\u00A9"} Austin Scholl 2018</li>
             <li>
               <span onClick={this.toggleHidden}>Support</span>
             </li>
