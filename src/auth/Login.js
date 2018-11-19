@@ -69,7 +69,7 @@ class Login extends Component {
               <h3>Pickup shifts</h3>
               <hr />
               <p>
-                Welcome to our full stack where nurses can pickup shifts posted by hospitals.
+                Welcome to our full stack application where nurses can pickup shifts posted by hospitals.
               </p>{" "}
               <p>
                 Feel free to check the readme file in my{" "}
